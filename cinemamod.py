@@ -10,7 +10,7 @@ class cinema:
         self.seat_grid = {}
         for i in range(1,rows+1):
             for j in range(1,columns+1):
-                self.seat_grid[(100*i)+j]=seat(rows,columns,i,j)
+                self.seat_grid[(100*i)+j]=seat(rows,columns,i,j)        # multiplying row number by 100 so that more than 9 columns can be given unique key in seat_grid dictionary
                 self.total_income+=self.seat_grid[(100 * i) + j].Price
 
     def show_seats(self):

@@ -6,7 +6,7 @@ class seat:
         self.Price=self.price_calculator(Tr,Tc,r,c)
 
     def bookseat(self,rno,cno):
-        seat.user_list[(rno*100)+cno]=user()
+        seat.user_list[(rno*100)+cno]=user()         #multiplying rno(row number) by 100 so that unique keys can be formed for more than 10 columns
         seat.user_list[(rno * 100) + cno].set_user_info()
         self.Availability=False
 
